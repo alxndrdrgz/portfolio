@@ -12,6 +12,11 @@ html {
     font-size: 62.5%
 }
 
+.wrapper {
+   min-width: 360px;
+    margin: 0 auto;
+}
+
 h1, h2, p, a {
     margin: 0;
     padding: 0;
@@ -26,12 +31,11 @@ body {
 
 header {
     height: 100vh;
-    margin: 200px;
-    margin: 200px;
+    margin-top: 20rem;
 }
 
 h1 {
-    font-size: 5rem;
+    font-size: 3.5rem;
     font-style: Italic;
 }
 
