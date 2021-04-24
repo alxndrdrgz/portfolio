@@ -17,10 +17,23 @@ html {
     margin: 0 auto;
 }
 
+/* Typographical styles for temporary landing page */
 h1, h2, p, a {
     margin: 0;
     padding: 0;
 }
+
+a:visited, a {
+    color: rgb(215, 207, 207);
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    color: goldenrod;
+    text-decoration: none;
+}
+
 
 body {
     background-color: black;
@@ -41,6 +54,15 @@ h1 {
 
 h2, p {
 padding-right: 2rem;
+}
+
+nav {
+    padding-right: 1.5rem;
+}
+
+.fab {
+    font-size: 2rem;
+    padding: 0.5rem 0.5rem;
 }
 
 .flexBox {
