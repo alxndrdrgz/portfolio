@@ -1,0 +1,66 @@
+// hi hello and welcome to your portfolio styles. my name is Alex and I will be your host for this evening and for the rest of your life. 
+
+@import "partials/setup";
+html {
+    font-size: 62.5%
+}
+
+.wrapper {
+   min-width: 360px;
+    margin: 0 auto;
+}
+
+/* Typographical styles for temporary landing page */
+h1, h2, p, a {
+	margin: 0;
+	padding: 0;
+}
+
+a:visited, a {
+	color: rgb(215, 207, 207);
+	text-decoration: none;
+}
+
+a:hover,
+a:focus {
+	color: goldenrod;
+	text-decoration: none;
+}
+
+
+body {
+	background-color: black;
+	font-family: 'IBM Plex Serif' , serif;
+	color: rgb(215, 207, 207);
+	text-align: right;
+}
+
+header {
+	height: 100vh;
+	margin-top: 20rem;
+}
+
+h1 {
+	font-size: 3.5rem;
+	font-style: Italic;
+}
+
+h2, 
+p {
+	padding-right: 2rem;
+}
+
+nav {
+	padding-right: 1.5rem;
+}
+
+.fab {
+	font-size: 2rem;
+	padding: 0.5rem 0.5rem;
+}
+
+.flexBox {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}

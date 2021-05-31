@@ -1,0 +1,34 @@
+{
+	"editor.formatOnPaste": true,
+	"editor.wordWrap": "on",
+	"liveSassCompile.settings.excludeList": [
+		"**/node_modules/**",
+		".vscode/**"
+	],
+	"liveSassCompile.settings.formats": [
+		// This is Default.
+		{
+			"format": "expanded",
+			"extensionName": ".css",
+			"savePath": "/dist/css"
+		},
+		// You can add more
+		{
+			"format": "compressed",
+			"extensionName": ".min.css",
+			"savePath": "/dist/css"
+		}
+		// ,
+		// // More Complex
+		// {
+		//     "format": "compressed",
+		//     "extensionName": ".min.css",
+		//     "savePath": "~/../css/"
+		// }
+	],
+	"liveSassCompile.settings.generateMap": false,
+	"liveSassCompile.settings.autoprefix": [],
+	"emmet.triggerExpansionOnTab": true,
+	"window.autoDetectColorScheme": true,
+	"window.zoomLevel": 0
+}
