@@ -4,12 +4,13 @@
 @import "partials/setup";
 @import "partials/variables";
 @import "partials/typography";
+@import "partials/index-header";
 
 //some cross document universal styles
 
 .wrapper {
   max-width: 1280px;
-	width: 85%;
+	width: 90%;
   margin: 0 auto;
 }
 
@@ -17,28 +18,6 @@
 body {
 	background-color: $white;
 	color: $black;
-	text-align: right;
 }
 
 
-
-h2, 
-p {
-	padding-right: 2rem;
-}
-
-nav {
-	padding-right: 1.5rem;
-}
-
-//icon styling
-.fab {
-	font-size: 2rem;
-	padding: 0.5rem 0.5rem;
-}
-
-.flexBox {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}

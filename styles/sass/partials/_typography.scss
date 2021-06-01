@@ -14,10 +14,21 @@ body {
   color: $white;
 }
 
+//Icon styling
+
+.fab {
+	font-size: 4rem;
+	padding: 0.5rem 0.5rem;
+}
+
 //Link styles
 
+ul li a {
+  font-size: 2.5rem;
+}
+
 a:visited, a {
-	color: rgb(215, 207, 207);
+	color: $white;
 	text-decoration: none;
 }
 
@@ -31,10 +42,17 @@ a:focus {
 
 // Header specific typographical elements
 
-h1 {
+header {
+  color: $white;
+  text-align: right;
+
+  h1 {
   font-family: $ibm;
-	font-size: 6rem;
+	font-size: 9rem;
 	font-weight: 300;
 	font-style: Italic;
+  }
 }
+
+
 

@@ -253,8 +253,17 @@ body {
   color: #FDFBF7;
 }
 
+.fab {
+  font-size: 4rem;
+  padding: 0.5rem 0.5rem;
+}
+
+ul li a {
+  font-size: 2.5rem;
+}
+
 a:visited, a {
-  color: #d7cfcf;
+  color: #FDFBF7;
   text-decoration: none;
 }
 
@@ -264,41 +273,54 @@ a:focus {
   text-decoration: none;
 }
 
-h1 {
+header {
+  color: #FDFBF7;
+  text-align: right;
+}
+
+header h1 {
   font-family: "IBM Plex Serif", serif;
-  font-size: 6rem;
+  font-size: 9rem;
   font-weight: 300;
   font-style: Italic;
 }
 
+header {
+  height: 95vh;
+  background-color: #211E1E;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+header .header-text {
+  height: 250px;
+  width: 50%;
+  margin-left: auto;
+}
+
+header .top-nav {
+  background-color: #EFB524;
+  padding: 35px 0;
+}
+
+header .top-nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+header .top-nav ul li {
+  padding: 1.5rem;
+}
+
 .wrapper {
   max-width: 1280px;
-  width: 85%;
+  width: 90%;
   margin: 0 auto;
 }
 
 body {
   background-color: #FDFBF7;
   color: #000000;
-  text-align: right;
-}
-
-h2,
-p {
-  padding-right: 2rem;
-}
-
-nav {
-  padding-right: 1.5rem;
-}
-
-.fab {
-  font-size: 2rem;
-  padding: 0.5rem 0.5rem;
-}
-
-.flexBox {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }

@@ -1,0 +1,31 @@
+//Index Header Styles Here
+header {
+	height: 95vh;
+	background-color: $dark-grey;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+
+	.header-text {
+		height: 250px;
+		width: 50%;
+		margin-left: auto;
+	
+
+	}
+
+	.top-nav {
+		background-color: $yellow;
+		padding: 35px 0;
+		ul {
+			width: 100%;
+			display: flex;
+			justify-content: flex-end;
+
+			li {
+				padding: 1.5rem;
+			}
+
+		}
+	}
+}
