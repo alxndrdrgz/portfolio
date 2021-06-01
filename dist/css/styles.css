@@ -233,6 +233,11 @@ li {
   list-style: none;
 }
 
+img {
+  max-width: 100%;
+  display: block;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -248,19 +253,6 @@ body {
   color: #FDFBF7;
 }
 
-h1 {
-  font-family: "IBM Plex Serif", serif;
-  font-size: 6rem;
-  font-weight: 300;
-  font-style: Italic;
-}
-
-.wrapper {
-  max-width: 1280px;
-  width: 90%;
-  margin: 0 auto;
-}
-
 a:visited, a {
   color: #d7cfcf;
   text-decoration: none;
@@ -270,6 +262,19 @@ a:hover,
 a:focus {
   color: goldenrod;
   text-decoration: none;
+}
+
+h1 {
+  font-family: "IBM Plex Serif", serif;
+  font-size: 6rem;
+  font-weight: 300;
+  font-style: Italic;
+}
+
+.wrapper {
+  max-width: 1280px;
+  width: 85%;
+  margin: 0 auto;
 }
 
 body {

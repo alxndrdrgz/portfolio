@@ -14,6 +14,21 @@ body {
   color: $white;
 }
 
+//Link styles
+
+a:visited, a {
+	color: rgb(215, 207, 207);
+	text-decoration: none;
+}
+
+a:hover,
+a:focus {
+	color: goldenrod;
+	text-decoration: none;
+}
+
+// Buttons
+
 // Header specific typographical elements
 
 h1 {
@@ -23,4 +38,3 @@ h1 {
 	font-style: Italic;
 }
 
-// Buttons

@@ -5,23 +5,14 @@
 @import "partials/variables";
 @import "partials/typography";
 
+//some cross document universal styles
+
 .wrapper {
   max-width: 1280px;
-	width: 90%;
+	width: 85%;
   margin: 0 auto;
 }
 
-
-a:visited, a {
-	color: rgb(215, 207, 207);
-	text-decoration: none;
-}
-
-a:hover,
-a:focus {
-	color: goldenrod;
-	text-decoration: none;
-}
 
 body {
 	background-color: $white;
@@ -40,6 +31,7 @@ nav {
 	padding-right: 1.5rem;
 }
 
+//icon styling
 .fab {
 	font-size: 2rem;
 	padding: 0.5rem 0.5rem;

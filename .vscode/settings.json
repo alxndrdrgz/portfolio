@@ -30,5 +30,5 @@
 	"liveSassCompile.settings.autoprefix": [],
 	"emmet.triggerExpansionOnTab": true,
 	"window.autoDetectColorScheme": true,
-	"window.zoomLevel": -1
+	"window.zoomLevel": 1
 }
