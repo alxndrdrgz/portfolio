@@ -242,7 +242,18 @@ html {
   font-size: 62.5%;
 }
 
-h1, h2, p, a {
+h1, h2, a {
+  font-family: "IBM Plex Serif", serif;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 3.5rem;
+}
+
+p {
   margin: 0;
   padding: 0;
 }
@@ -255,7 +266,6 @@ body {
 
 .fab {
   font-size: 4rem;
-  padding: 0.5rem 0.5rem;
 }
 
 ul li a {
@@ -263,14 +273,15 @@ ul li a {
 }
 
 a:visited, a {
+  font-family: "IBM Plex Serif", serif;
   color: #FDFBF7;
   text-decoration: none;
 }
 
 a:hover,
 a:focus {
-  color: goldenrod;
-  text-decoration: none;
+  color: #FD7E14;
+  border-bottom: #FD7E14 2px solid;
 }
 
 header {
@@ -285,23 +296,45 @@ header h1 {
   font-style: Italic;
 }
 
+.projects h2 {
+  font-size: 4rem;
+}
+
 header {
   height: 95vh;
   background-color: #211E1E;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  position: relative;
+}
+
+header .profile-image {
+  height: auto;
+  width: 500px;
+  position: absolute;
+  bottom: 230px;
+  left: 120px;
 }
 
 header .header-text {
-  height: 250px;
-  width: 50%;
-  margin-left: auto;
+  padding: 5% 0;
+  background-color: #000000;
+  border-top: #EFB524 3px solid;
+}
+
+header .header-text h2 {
+  margin-left: calc((100% / 2) - 60px);
+}
+
+header .header-text p {
+  margin-left: calc((100% / 2) - 60px);
+  padding: 1.5% 0;
 }
 
 header .top-nav {
   background-color: #EFB524;
-  padding: 35px 0;
+  padding: 30px 0;
 }
 
 header .top-nav ul {
@@ -312,6 +345,54 @@ header .top-nav ul {
 
 header .top-nav ul li {
   padding: 1.5rem;
+}
+
+.projects {
+  padding-bottom: 8%;
+}
+
+.projects h2 {
+  margin: 8% 40px;
+}
+
+.projects .project-gallery {
+  display: flex;
+  flex-direction: column;
+}
+
+.projects .project-gallery .project-grey {
+  background-color: #C4C4C4;
+  margin-left: 8%;
+  padding: 4% 0;
+}
+
+.projects .project-gallery .project-grey .project-text {
+  flex-basis: 50%;
+}
+
+.projects .project-gallery .project-yellow {
+  background-color: #EFB524;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projects .project-gallery .project-yellow .inner-box {
+  margin-left: 8%;
+  padding: 4% 0;
+}
+
+.project-flex {
+  display: flex;
+}
+
+.project-flex .project-img {
+  flex-basis: 50%;
+}
+
+.project-flex .project-text {
+  flex-basis: 50%;
+  background-color: #FDFBF7;
+  padding: 5%;
 }
 
 .wrapper {

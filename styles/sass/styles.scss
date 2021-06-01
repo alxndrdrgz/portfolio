@@ -5,6 +5,8 @@
 @import "partials/variables";
 @import "partials/typography";
 @import "partials/index-header";
+@import "partials/projects.scss";
+@import "partials/skills";
 
 //some cross document universal styles
 
@@ -13,7 +15,6 @@
 	width: 90%;
   margin: 0 auto;
 }
-
 
 body {
 	background-color: $white;
