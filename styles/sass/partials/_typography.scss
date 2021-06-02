@@ -11,7 +11,7 @@ h1, h2, a {
 
 h2 {
 	font-weight: 300;
-	font-size: 4.5rem;
+	font-size: 6rem;
 }
 
 p {
@@ -65,18 +65,18 @@ header {
 
 // Project typography
 
-.projects, .skills {
+.projects, .skills{
 	h2 {
-		font-size: 4rem;
+		font-size: 6rem;
     margin: 8% 40px;
 	}
 }
 
-//Skills typography section
+// Skills typography section
 
 .skills {
 	h2 {
-		color: $white;
+		color: $yellow;
 		text-align: right;
 		padding-top: 8%;
 		margin-bottom: 5%;
@@ -94,5 +94,11 @@ header {
 	color: $white;
 }
 
+// Contact typography section:
+.contact-header {
+	color: $yellow;
+	padding: 8% 0;
+	margin-left: 40px;
+}
 
 

@@ -29,6 +29,26 @@
   display: flex;
   .project-img {
     flex-basis: 50%;
+    position: relative;
+    // experimental overlay text
+    .project-link {
+      position: absolute;
+      background: $trans-white;
+      bottom: 0;
+      width: 100%;
+      padding: 28%;
+      opacity: 0;
+      .link-box{
+        background-color: $black;
+        color: $white;
+      }
+    }
+  }
+
+  .project-img:hover{
+   .project-link {
+      opacity: 1;
+   } 
   }
   .project-text {
     flex-basis: 50%;
@@ -37,3 +57,5 @@
   }
 
 }
+
+
