@@ -12,8 +12,7 @@ header {
 		height: auto;
 		width: 500px;
 		position: absolute;
-		bottom: 230px;
-		left: 120px;
+		bottom: 22%;
 	}
 
 	.header-text{
@@ -33,7 +32,7 @@ header {
 
 	.top-nav {
 		background-color: $yellow;
-		padding: 30px 0;
+		padding: 25px 0;
 		ul {
 			width: 100%;
 			display: flex;
@@ -44,4 +43,12 @@ header {
 			}
 		}
 	}
+}
+
+// Listen, there is probably a more efficient way to align these nav links but this works for now and we'll fix it later.
+.top-nav > div:nth-child(1) > ul:nth-child(1) > li:nth-child(4),
+.top-nav > div:nth-child(1) > ul:nth-child(1) > li:nth-child(5),
+.top-nav > div:nth-child(1) > ul:nth-child(1) > li:nth-child(6),
+.top-nav > div:nth-child(1) > ul:nth-child(1) > li:nth-child(7) {
+ margin-top: 5px;
 }

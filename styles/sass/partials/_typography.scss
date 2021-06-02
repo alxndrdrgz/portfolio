@@ -11,7 +11,7 @@ h1, h2, a {
 
 h2 {
 	font-weight: 300;
-	font-size: 3.5rem;
+	font-size: 4.5rem;
 }
 
 p {
@@ -72,15 +72,27 @@ header {
 	}
 }
 
+//Skills typography section
+
 .skills {
 	h2 {
 		color: $white;
 		text-align: right;
 		padding-top: 8%;
+		margin-bottom: 5%;
 	}
 }
 
+.skills-text {
+	li {
+		font-size: 3rem;
+		font-family: $ibm;
+	}
+}
 
+.cheeky-skills {
+	color: $white;
+}
 
 
 
