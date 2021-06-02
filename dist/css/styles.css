@@ -296,8 +296,15 @@ header h1 {
   font-style: Italic;
 }
 
-.projects h2 {
+.projects h2, .skills h2 {
   font-size: 4rem;
+  margin: 8% 40px;
+}
+
+.skills h2 {
+  color: #FDFBF7;
+  text-align: right;
+  padding-top: 8%;
 }
 
 header {
@@ -351,10 +358,6 @@ header .top-nav ul li {
   padding-bottom: 8%;
 }
 
-.projects h2 {
-  margin: 8% 40px;
-}
-
 .projects .project-gallery {
   display: flex;
   flex-direction: column;
@@ -393,6 +396,18 @@ header .top-nav ul li {
   flex-basis: 50%;
   background-color: #FDFBF7;
   padding: 5%;
+}
+
+.skills {
+  background-color: #000000;
+}
+
+.skill-gallery {
+  background-color: #EFB524;
+}
+
+.skill-gallery .fab {
+  font-size: 5rem;
 }
 
 .wrapper {

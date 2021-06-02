@@ -65,11 +65,22 @@ header {
 
 // Project typography
 
-.projects {
+.projects, .skills {
 	h2 {
 		font-size: 4rem;
+    margin: 8% 40px;
 	}
 }
+
+.skills {
+	h2 {
+		color: $white;
+		text-align: right;
+		padding-top: 8%;
+	}
+}
+
+
 
 
 
