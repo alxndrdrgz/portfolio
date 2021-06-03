@@ -29,6 +29,14 @@ header {
 			padding: 1.5% 0;
 		}		
 	}
+		
+}
+	.sticky-nav {
+		height: 8%;
+		position: sticky;
+		top: 0;
+		z-index: 100;
+		}
 
 	.top-nav {
 		background-color: $yellow;
@@ -43,7 +51,6 @@ header {
 			}
 		}
 	}
-}
 
 // Listen, there is probably a more efficient way to align these nav links but this works for now and we'll fix it later.
 .top-nav > div:nth-child(1) > ul:nth-child(1) > li:nth-child(4),

@@ -319,7 +319,7 @@ header h1 {
 }
 
 .skills-text li {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-family: "IBM Plex Serif", serif;
 }
 
@@ -364,18 +364,25 @@ header .header-text p {
   padding: 1.5% 0;
 }
 
-header .top-nav {
+.sticky-nav {
+  height: 8%;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.top-nav {
   background-color: #EFB524;
   padding: 25px 0;
 }
 
-header .top-nav ul {
+.top-nav ul {
   width: 100%;
   display: flex;
   justify-content: flex-end;
 }
 
-header .top-nav ul li {
+.top-nav ul li {
   padding: 1.5rem;
 }
 
