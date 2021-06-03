@@ -259,7 +259,7 @@ p {
 }
 
 body {
-  font-size: 1.7rem;
+  font-size: 1.9rem;
   font-family: "Lato", sans-serif;
   color: #000000;
 }
@@ -303,7 +303,7 @@ header h1 {
 .project-link:hover,
 .project-link:focus {
   color: #FD7E14;
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 .projects h2, .skills h2 {
@@ -555,6 +555,64 @@ header .header-text p {
   padding: 4% 0 2%;
   margin-left: 8%;
   width: 80%;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+form .name,
+form .email {
+  flex-basis: 50%;
+}
+
+form .name input,
+form .email input {
+  padding: 2%;
+  width: 90%;
+  border: 3px solid #EFB524;
+  background-color: #000000;
+}
+
+form .name input[type="text"]::placeholder,
+form .name input[type="email"]::placeholder,
+form .email input[type="text"]::placeholder,
+form .email input[type="email"]::placeholder {
+  color: #FDFBF7;
+}
+
+form .message {
+  flex-basis: 100%;
+}
+
+form .message textarea {
+  resize: none;
+  width: 95%;
+  height: 200px;
+  border: 3px solid #EFB524;
+  background-color: #000000;
+  margin: 0 auto;
+  padding: 2%;
+}
+
+form .message textarea::placeholder {
+  color: #FDFBF7;
+}
+
+form button {
+  background-color: #C4C4C4;
+  border: #C4C4C4 3px solid;
+  color: #000000;
+  margin: 2% 0;
+  padding: 3%;
+}
+
+form button:hover,
+form button:focus {
+  background-color: #000000;
+  border: #EFB524 3px solid;
+  color: #EFB524;
 }
 
 footer {
