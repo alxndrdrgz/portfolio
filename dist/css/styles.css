@@ -697,6 +697,11 @@ footer {
 }
 
 @media (max-width: 834px) {
+  header .profile-image {
+    /* bottom: 22%; */
+    bottom: 56%;
+    left: 33%;
+  }
   .skills-gallery i {
     font-size: 5rem;
   }

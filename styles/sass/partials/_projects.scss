@@ -30,6 +30,10 @@
   .project-img {
     flex-basis: 50%;
     position: relative;
+    img {
+      width: 100%;
+      height: auto;
+    }
     // experimental overlay text
     .project-link {
       position: absolute;
