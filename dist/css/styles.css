@@ -301,6 +301,16 @@ header h1 {
   margin: 8% 40px;
 }
 
+.link-box {
+  font-size: 3rem;
+}
+
+.link-box a:hover,
+.link-box a:focus {
+  color: #5999EC;
+  border-bottom: #5999EC 2px solid;
+}
+
 .skills h2 {
   color: #EFB524;
   text-align: right;
@@ -417,16 +427,20 @@ header .top-nav ul li {
 
 .project-flex .project-img .project-link {
   position: absolute;
-  background: rgba(255, 255, 255, 0.349);
+  background: rgba(17, 17, 17, 0.404);
+  transition: 0.4s ease-in;
   bottom: 0;
   width: 100%;
-  padding: 28%;
+  height: 100%;
   opacity: 0;
 }
 
 .project-flex .project-img .project-link .link-box {
   background-color: #000000;
   color: #FDFBF7;
+  padding: 4%;
+  text-align: center;
+  margin-top: 25%;
 }
 
 .project-flex .project-img:hover .project-link {

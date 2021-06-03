@@ -72,6 +72,15 @@ header {
 	}
 }
 
+.link-box {
+	font-size: 3rem;
+	a:hover,
+	a:focus {
+		color: $blue;
+		border-bottom: $blue 2px solid;
+	}
+}
+
 // Skills typography section
 
 .skills {
