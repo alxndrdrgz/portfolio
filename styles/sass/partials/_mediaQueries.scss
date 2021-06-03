@@ -38,7 +38,6 @@
 
 
 @media (max-width: 1040px) {
-  
   body {
     font-size: 1.5rem;
   }
@@ -79,13 +78,23 @@
 }
 
 @media (max-width: 834px) {
-  
-  header .profile-image {
-    /* bottom: 22%; */
+  header {
+    .header-text {
+      text-align: center;
+      h2,
+      p {
+        margin-left: 0;
+      }
+    }
+    .profile-image {
     bottom: 56%;
     left: 33%;
+    img {
+        max-height: 200px;
+      }
+    }
+
   }
-    
   .skills-gallery {
     i {
       font-size: 5rem;
