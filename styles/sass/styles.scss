@@ -8,6 +8,7 @@
 @import "partials/projects.scss";
 @import "partials/skills";
 @import "partials/contact";
+@import "partials/footer";
 
 //some cross document universal styles
 
@@ -19,7 +20,6 @@
 
 body {
 	background-color: $white;
-	color: $black;
 }
 
 

@@ -1,7 +1,7 @@
 //Index Header Styles Here
 
 header {
-	height: 95vh;
+	height: 85vh;
 	background-color: $dark-grey;
 	display: flex;
 	flex-direction: column;
@@ -31,26 +31,28 @@ header {
 	}
 		
 }
-	.sticky-nav {
-		height: 8%;
-		position: sticky;
-		top: 0;
-		z-index: 100;
-		}
 
-	.top-nav {
-		background-color: $yellow;
-		padding: 25px 0;
-		ul {
-			width: 100%;
-			display: flex;
-			justify-content: flex-end;
+// Sticky nav bar 
+.sticky-nav {
+	height: 5%;
+	position: sticky;
+	top: 0;
+	z-index: 100;
+	}
 
-			li {
-				padding: 1.5rem;
-			}
+.top-nav {
+	background-color: $yellow;
+	padding: 5px 0;
+	ul {
+		width: 100%;
+		display: flex;
+		justify-content: flex-end;
+
+		li {
+			padding: 1.5rem;
 		}
 	}
+}
 
 // Listen, there is probably a more efficient way to align these nav links but this works for now and we'll fix it later.
 .top-nav > div:nth-child(1) > ul:nth-child(1) > li:nth-child(4),

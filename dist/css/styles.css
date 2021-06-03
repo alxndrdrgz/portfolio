@@ -261,7 +261,7 @@ p {
 body {
   font-size: 1.7rem;
   font-family: "Lato", sans-serif;
-  color: #FDFBF7;
+  color: #000000;
 }
 
 .fab {
@@ -274,14 +274,14 @@ ul li a {
 
 a:visited, a {
   font-family: "IBM Plex Serif", serif;
-  color: #FDFBF7;
+  color: #000000;
   text-decoration: none;
 }
 
 a:hover,
 a:focus {
-  color: #FD7E14;
-  border-bottom: #FD7E14 2px solid;
+  color: #FDFBF7;
+  border-bottom: #FDFBF7 2px solid;
 }
 
 header {
@@ -296,13 +296,27 @@ header h1 {
   font-style: Italic;
 }
 
+.project-link {
+  font-family: "Lato", sans-serif;
+}
+
+.project-link:hover,
+.project-link:focus {
+  color: #FD7E14;
+  font-size: 1.8rem;
+}
+
 .projects h2, .skills h2 {
   font-size: 6rem;
-  margin: 8% 40px;
+  margin: 8% 40px 5%;
 }
 
 .link-box {
   font-size: 3rem;
+}
+
+.link-box a {
+  color: #FDFBF7;
 }
 
 .link-box a:hover,
@@ -324,17 +338,42 @@ header h1 {
 }
 
 .cheeky-skills {
+  text-align: left;
+  padding: 1.5%;
   color: #FDFBF7;
 }
 
-.contact-header {
+.cheeky-skills a {
+  color: #FDFBF7;
+  font-family: "Lato", sans-serif;
+}
+
+.cheeky-skills a:hover,
+.cheeky-skills a:focus {
+  color: #FD7E14;
+  border-bottom: 2px solid #FD7E14;
+}
+
+.contact .contact-header {
   color: #EFB524;
-  padding: 8% 0;
+  padding: 8% 0 4%;
   margin-left: 40px;
 }
 
+.contact-text {
+  color: #FDFBF7;
+  padding-bottom: 6%;
+}
+
+.footer-note {
+  color: #EFB524;
+  font-size: 1.5rem;
+  padding: 2%;
+  text-align: center;
+}
+
 header {
-  height: 95vh;
+  height: 85vh;
   background-color: #211E1E;
   display: flex;
   flex-direction: column;
@@ -365,7 +404,7 @@ header .header-text p {
 }
 
 .sticky-nav {
-  height: 8%;
+  height: 5%;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -373,7 +412,7 @@ header .header-text p {
 
 .top-nav {
   background-color: #EFB524;
-  padding: 25px 0;
+  padding: 5px 0;
 }
 
 .top-nav ul {
@@ -506,12 +545,19 @@ header .header-text p {
 .cheeky-skills {
   background-color: #000000;
   width: 88%;
-  padding: 2% 0;
-  text-align: center;
 }
 
-.heading-divider {
-  width: 100%;
+.contact {
+  background-color: #000000;
+}
+
+.contact-wrapper {
+  padding: 4% 0 2%;
+  margin-left: 8%;
+  width: 80%;
+}
+
+footer {
   background-color: #000000;
 }
 
@@ -523,5 +569,4 @@ header .header-text p {
 
 body {
   background-color: #FDFBF7;
-  color: #000000;
 }

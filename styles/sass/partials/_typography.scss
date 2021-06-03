@@ -22,7 +22,7 @@ p {
 body {
   font-size: 1.7rem;
   font-family: $lato;
-  color: $white;
+  color: $black;
 }
 
 //Icon styling
@@ -37,14 +37,14 @@ ul li a {
 
 a:visited, a {
 	font-family: $ibm;
-	color: $white;
+	color: $black;
 	text-decoration: none;
 }
 
 a:hover,
 a:focus {
-	color: $orange;
-	border-bottom: $orange 2px solid;
+	color: $white;
+	border-bottom: $white 2px solid;
 }
 
 // Buttons
@@ -65,15 +65,28 @@ header {
 
 // Project typography
 
+.project-link {
+	font-family: $lato;
+}
+
+.project-link:hover,
+.project-link:focus {
+	color: $orange;
+	font-size: 1.8rem;
+}
+
 .projects, .skills{
 	h2 {
 		font-size: 6rem;
-    margin: 8% 40px;
+    margin: 8% 40px 5%;
 	}
 }
 
 .link-box {
 	font-size: 3rem;
+	a	{
+		color: $white;
+	}
 	a:hover,
 	a:focus {
 		color: $blue;
@@ -82,7 +95,6 @@ header {
 }
 
 // Skills typography section
-
 .skills {
 	h2 {
 		color: $yellow;
@@ -100,14 +112,40 @@ header {
 }
 
 .cheeky-skills {
+	text-align: left;
+	padding: 1.5%;
 	color: $white;
+	a {
+		color: $white;
+		font-family: $lato;
+	}
+	a:hover,
+	a:focus {
+		color: $orange;
+		border-bottom: 2px solid $orange;
+	}
 }
 
 // Contact typography section:
-.contact-header {
+.contact {
+	.contact-header {
+		color: $yellow;
+		padding: 8% 0 4%;
+		margin-left: 40px;
+	}	
+}
+
+.contact-text {
+	color: $white;
+	padding-bottom: 6%;
+}
+
+// Footer typographer section:
+.footer-note {
 	color: $yellow;
-	padding: 8% 0;
-	margin-left: 40px;
+	font-size: 1.5rem;
+	padding: 2%;
+	text-align: center;
 }
 
 
