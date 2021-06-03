@@ -24,23 +24,34 @@
 
 }
 
+@media (max-width: 1280px) {
+    header {
+      h1 {
+        font-size: 7.5rem;
+      }
+      h2 {
+        font-size: 3.5rem;
+      }
+    }
+}
+
 
 
 @media (max-width: 1040px) {
   
-  .profile-image {
-    position: absolute;
-    bottom: 15%;
+  body {
+    font-size: 1.5rem;
   }
 
   .header-text-box {
     width: 100%;
     margin-left: 2%;
     h1 {
-    font-size: 6rem;
+    font-size: 6.5rem;
+    margin-bottom: 2%;
     }
     h2 {
-    font-size: 4rem;
+    font-size: 2.5rem;
     }
   }
 
@@ -58,7 +69,29 @@
     }
 
   }
+  .project-flex {
+    flex-direction: column;
+  }
+
+  ul li a {
+  font-size: 2rem;
+  }
+
 }
 
+@media (max-width: 834px) {
+  
+  .skills-gallery {
+    i {
+      font-size: 5rem;
+    }
+
+    .skills-text {
+	    li {
+		  font-size: 2rem;
+	    } 
+    }
+  }
+} 
 
   
