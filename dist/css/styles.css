@@ -235,6 +235,7 @@ li {
 
 img {
   max-width: 100%;
+  height: 100%;
   display: block;
 }
 
@@ -333,7 +334,7 @@ header h1 {
 }
 
 .skills-text li {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-family: "IBM Plex Serif", serif;
 }
 
@@ -383,7 +384,8 @@ header {
 
 header .profile-image {
   height: auto;
-  width: 500px;
+  width: 35%;
+  z-index: 25;
   position: absolute;
   bottom: 22%;
 }
@@ -520,21 +522,36 @@ header .header-text p {
 .skills-gallery .skills-row-1,
 .skills-gallery .skills-row-2,
 .skills-gallery .skills-row-3 {
-  flex-basis: 50%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-basis: 100%;
   margin: 4% 0;
+  text-align: center;
 }
 
 .skills-gallery .skills-row-4 {
-  flex-basis: 50%;
   display: flex;
-  justify-content: space-around;
-  margin: 4% 0;
+  flex-basis: 100%;
+  justify-content: space-evenly;
+  margin: 5% 0 4%;
 }
 
-.skills-gallery .skills-text {
-  margin: 4%;
+.skills-gallery ul {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.skills-gallery ul li {
+  width: calc(100% / 3);
+  text-align: center;
+}
+
+.skills-gallery .skills-text-4 {
+  justify-content: center;
 }
 
 .skills-gallery i {
@@ -617,6 +634,51 @@ form button:focus {
 
 footer {
   background-color: #000000;
+}
+
+@media (min-width: 1440px) {
+  .skills-row-1,
+  .skills-row-2,
+  .skills-row-3,
+  .skills-row-4 {
+    flex-basis: 50%;
+    margin: 4% 0;
+  }
+  .skills-text {
+    margin: 4%;
+  }
+  .skills-text:nth-child(4) {
+    margin-right: 0px;
+  }
+  i {
+    font-size: 10rem;
+    color: #000000;
+  }
+}
+
+@media (max-width: 1040px) {
+  .profile-image {
+    position: absolute;
+    bottom: 15%;
+  }
+  .header-text-box {
+    width: 100%;
+    margin-left: 2%;
+  }
+  .header-text-box h1 {
+    font-size: 6rem;
+  }
+  .header-text-box h2 {
+    font-size: 4rem;
+  }
+  .projects h2,
+  .skills h2,
+  .contact h2 {
+    font-size: 4rem;
+  }
+  .skills i {
+    font-size: 8rem;
+  }
 }
 
 .wrapper {

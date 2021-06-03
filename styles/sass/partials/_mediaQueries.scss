@@ -1,0 +1,64 @@
+// Hello this is where mediaQueries live. Long live responsive design
+
+@media (min-width: 1440px) {
+  //Skills gallergy media queries: 
+  .skills-row-1,
+  .skills-row-2,
+  .skills-row-3,
+  .skills-row-4  {
+    flex-basis: 50%;
+    margin: 4% 0;
+  }
+
+  .skills-text {
+    margin: 4%;
+  }
+  .skills-text:nth-child(4) {
+    margin-right: 0px;
+    // padding-left: 38px;
+  }
+  i {
+    font-size: 10rem;
+    color: $black;
+  }
+
+}
+
+
+
+@media (max-width: 1040px) {
+  
+  .profile-image {
+    position: absolute;
+    bottom: 15%;
+  }
+
+  .header-text-box {
+    width: 100%;
+    margin-left: 2%;
+    h1 {
+    font-size: 6rem;
+    }
+    h2 {
+    font-size: 4rem;
+    }
+  }
+
+  .projects,
+  .skills,
+  .contact {
+    h2 {
+      font-size: 4rem;
+    }
+  }
+
+  .skills {
+    i {
+      font-size: 8rem;
+    }
+
+  }
+}
+
+
+  

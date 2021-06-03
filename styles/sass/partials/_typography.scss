@@ -47,7 +47,6 @@ a:focus {
 	border-bottom: $white 2px solid;
 }
 
-// Buttons
 
 // Header specific typographical elements
 
@@ -62,6 +61,7 @@ header {
 	font-style: Italic;
   }
 }
+
 
 // Project typography
 
@@ -106,7 +106,7 @@ header {
 
 .skills-text {
 	li {
-		font-size: 2.5rem;
+		font-size: 3rem;
 		font-family: $ibm;
 	}
 }
