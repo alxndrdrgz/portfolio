@@ -589,6 +589,7 @@ form .email {
 
 form .name input,
 form .email input {
+  color: #FDFBF7;
   padding: 2%;
   width: 90%;
   border: 3px solid #EFB524;
@@ -607,6 +608,7 @@ form .message {
 }
 
 form .message textarea {
+  color: #FDFBF7;
   resize: none;
   width: 95%;
   height: 200px;

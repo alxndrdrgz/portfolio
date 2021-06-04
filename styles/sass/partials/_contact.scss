@@ -16,6 +16,7 @@ form {
   .email {
     flex-basis: 50%;
     input {
+      color: $white;
       padding: 2%;
       width: 90%;
       border: 3px solid $yellow;
@@ -29,6 +30,7 @@ form {
   .message {
     flex-basis: 100%;
     textarea {
+      color: $white;
       resize: none;
       width: 95%;
       height: 200px;
