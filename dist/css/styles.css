@@ -420,7 +420,7 @@ input[type="checkbox"] {
 
 .top-nav {
   background-color: #EFB524;
-  padding: 5px 0;
+  padding: 2px 0;
 }
 
 .top-nav ul {
@@ -729,7 +729,7 @@ footer {
     display: none;
     position: absolute;
     top: 35px;
-    right: 0;
+    right: 4%;
     background-color: #EFB524;
     width: 35%;
     transition: all 0.5s;
@@ -765,6 +765,12 @@ footer {
     height: 200px;
     bottom: 65%;
     left: 30%;
+  }
+  ul.hamburger-nav li i {
+    font-size: 2rem;
+  }
+  ul.hamburger-nav li a {
+    font-size: 1.7rem;
   }
   .skills i {
     font-size: 3rem;

@@ -100,7 +100,7 @@
       display: none;
       position: absolute;
       top: 35px;
-      right: 0;
+      right: 4%;
       background-color: $yellow;
       width: 35%;
       transition: all 0.5s;
@@ -151,6 +151,19 @@
       left: 30%;
     }
   }
+
+
+    ul.hamburger-nav {
+      li {
+        i {
+          font-size: 2rem;
+        }
+        a {
+          font-size: 1.7rem;
+        }
+      }
+    }
+  
 
   .skills {
     i {
