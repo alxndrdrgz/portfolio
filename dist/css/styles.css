@@ -384,7 +384,6 @@ header {
 
 header .profile-image {
   height: 450px;
-  width: 100%;
   position: absolute;
   bottom: 22%;
 }
@@ -723,7 +722,7 @@ footer {
 
 @media (max-width: 450px) {
   .wrapper {
-    max-width: 500px;
+    max-width: 450px;
   }
   header .profile-image {
     height: 200px;
