@@ -77,7 +77,7 @@
   }
 }
 
-@media (max-width: 834px) {
+@media (max-width: 837px) {
   header {
     .header-text {
       text-align: center;
@@ -87,13 +87,10 @@
       }
     }
     .profile-image {
-    bottom: 56%;
-    left: 33%;
-    img {
-        max-height: 200px;
-      }
+      height: 290px;
+      bottom: 50%;
+      left: 37%;
     }
-
   }
   .skills-gallery {
     i {
@@ -108,4 +105,49 @@
   }
 } 
 
+@media (max-width: 450px) {
+  header {
+    .profile-image {
+      height: 200px;
+      bottom: 65%;
+      left: 27%;
+    }
+  }
+
+  .skills {
+    i {
+      font-size: 3rem;
+    }
+  }
+
+  .skills-gallery,
+  .cheeky-skills {
+    width: 95%;
+    .skills-text {
+      li {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+
+  .cheeky-skills {
+    padding: 2%;
+  }
+
+  form {
+    flex-direction: column;
+    .name,
+    .email {
+      input {
+        width: 95%;
+      }
+    }
+    button {
+      width: 95%;
+    }
+
+  }
+
+}
   
