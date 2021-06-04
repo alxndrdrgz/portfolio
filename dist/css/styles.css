@@ -757,9 +757,9 @@ footer {
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 475px) {
   .wrapper {
-    max-width: 450px;
+    max-width: 475px;
   }
   header .profile-image {
     height: 200px;
@@ -772,19 +772,27 @@ footer {
   ul.hamburger-nav li a {
     font-size: 1.7rem;
   }
+  .projects .project-gallery .project-grey {
+    margin-left: 0;
+  }
   .skills i {
     font-size: 3rem;
   }
+  .skills-wrapper {
+    background-color: #000000;
+    padding: 0;
+  }
   .skills-gallery,
   .cheeky-skills {
-    width: 95%;
+    width: 100%;
   }
   .skills-gallery .skills-text li,
   .cheeky-skills .skills-text li {
     font-size: 1.5rem;
   }
   .cheeky-skills {
-    padding: 2%;
+    padding: 0 15px 0 0;
+    margin: 2% 4% 0 0;
   }
   form {
     flex-direction: column;

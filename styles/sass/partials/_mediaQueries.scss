@@ -139,9 +139,9 @@
   }
 } 
 
-@media (max-width: 450px) {
+@media (max-width: 475px) {
   .wrapper {
-    max-width: 450px;
+    max-width: 475px;
   }
   
   header {
@@ -151,7 +151,6 @@
       left: 30%;
     }
   }
-
 
     ul.hamburger-nav {
       li {
@@ -163,6 +162,14 @@
         }
       }
     }
+
+  .projects {
+    .project-gallery {
+        .project-grey {
+          margin-left: 0;
+      }  
+    }
+  }
   
 
   .skills {
@@ -171,9 +178,14 @@
     }
   }
 
+  .skills-wrapper {
+    background-color: $black;
+    padding: 0;
+  }
+
   .skills-gallery,
   .cheeky-skills {
-    width: 95%;
+    width: 100%;
     .skills-text {
       li {
         font-size: 1.5rem;
@@ -183,7 +195,8 @@
 
 
   .cheeky-skills {
-    padding: 2%;
+    padding: 0 15px 0 0;
+    margin: 2% 4% 0 0;
   }
 
   form {
