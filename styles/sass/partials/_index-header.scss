@@ -15,20 +15,30 @@ header {
 	}
 
 	.header-text{
-		padding: 5% 0;
+		padding: 2.5% 0 5%;
 		background-color: $black;
 		border-top: $yellow 3px solid;
 
 		h2 {
-			margin-left: calc((100% / 2) - 60px);
+			margin-left: calc((100% / 2) - 80px);
 		}
 		
 		p {
-			margin-left: calc((100% / 2) - 60px);
+			margin-left: calc((100% / 2) - 80px);
 			padding: 1.5% 0;
 		}		
 	}
 		
+}
+
+// Hamburger!!!!! NAV!!!!!
+
+.fa-bars {
+	visibility: hidden;
+}
+
+input[type="checkbox"] {
+	display: none;
 }
 
 

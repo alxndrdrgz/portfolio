@@ -83,7 +83,7 @@
       text-align: right;
       h2,
       p {
-        margin-left: 0;
+        margin-right: 1.5%;
       }
     }
     .profile-image {
@@ -92,6 +92,40 @@
       left: 30%;
     }
   }
+
+  //Hamburger NAV!!!!
+  .top-nav {
+    text-align: right;
+    ul.hamburger-nav {
+      display: none;
+      position: absolute;
+      top: 35px;
+      right: 0;
+      background-color: $yellow;
+      width: 35%;
+      transition: all 0.5s;
+      li {
+        margin-right: 6%;;
+      }
+    }
+  }
+
+  .fa-bars {
+	  visibility: visible;
+    font-size: 4rem;
+  }
+
+  input[type="checkbox"]:checked + ul.hamburger-nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .fa-bars:hover,
+  .fa-bars:focus {
+    color: $white;
+  }
+
+
   .skills-gallery {
     i {
       font-size: 5rem;
