@@ -3,149 +3,35 @@ html {
     font-size: 62.5%
 }
 
-h1, h2, a {
-	font-family: $ibm;
-	margin: 0;
-	padding: 0;
-}
-
-h2 {
-	font-weight: 300;
-	font-size: 5rem;
-}
-
 p {
 	margin: 0;
 	padding: 0;
 }
 
-body {
-  font-size: 1.9rem;
-  font-family: $lato;
-  color: $black;
-}
-
-//Icon styling
-.fab {
-	font-size: 4rem;
-}
-
-//Link styles
-ul li a {
-  font-size: 2.5rem;
-}
-
-a:visited, a {
-	font-family: $ibm;
-	color: $black;
-	text-decoration: none;
-}
-
-a:hover,
-a:focus {
-	color: $white;
-	border-bottom: $white 2px solid;
-}
-
-
-// Header specific typographical elements
-
-header {
-  color: $white;
+main {
+  color: $grey;
   text-align: right;
 
-  h1 {
-  font-family: $ibm;
-	font-size: 9rem;
-	font-weight: 300;
-	font-style: Italic;
+  .div-1 {
+	max-width: 65%;
+	margin-right: 30px;
   }
-}
 
-
-// Project typography
-
-.project-link {
-	font-family: $lato;
-}
-
-.project-link:hover,
-.project-link:focus {
-	color: $orange;
-	font-size: 2rem;
-}
-
-.projects, .skills{
-	h2 {
-		font-size: 6rem;
-    margin: 8% 40px 5%;
-	}
-}
-
-.link-box {
-	font-size: 3rem;
-	a	{
-		color: $white;
-	}
-	a:hover,
-	a:focus {
-		color: $blue;
-		border-bottom: $blue 2px solid;
-	}
-}
-
-// Skills typography section
-.skills {
-	h2 {
-		color: $yellow;
-		text-align: right;
-		padding-top: 8%;
-		margin-bottom: 5%;
-	}
-}
-
-.skills-text {
-	li {
-		font-size: 3rem;
-		font-family: $ibm;
-	}
-}
-
-.cheeky-skills {
-	text-align: left;
-	padding: 1.5%;
-	color: $white;
-	a {
-		color: $white;
-		font-family: $lato;
-	}
-	a:hover,
-	a:focus {
-		color: $orange;
-		border-bottom: 2px solid $orange;
-	}
-}
-
-// Contact typography section:
-.contact {
-	.contact-header {
-		color: $yellow;
-		padding: 8% 0 4%;
-		margin-left: 40px;
-	}	
-}
-
-.contact-text {
-	color: $white;
-	padding-bottom: 6%;
+  h1 {
+    font-family: serif;
+	font-size: 8rem;
+	font-weight: 300;
+	margin-bottom: 0;
+  }
 }
 
 // Footer typographer section:
 .footer-note {
 	color: $yellow;
-	font-size: 1.5rem;
+	font-size: 4rem;
 	padding: 2%;
-	text-align: center;
+	text-align: right;
+	margin-right: 30px;
 }
 
 

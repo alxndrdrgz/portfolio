@@ -18,3 +18,12 @@ img {
   height: 100%;
   display: block;
 }
+
+main {
+  background-color: #000;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
