@@ -1,6 +1,10 @@
 
 html {
-    font-size: 62.5%
+    font-size: 62.5%;
+}
+
+a {
+	text-decoration: none;
 }
 
 p {
@@ -18,7 +22,7 @@ main {
   }
 
   h1 {
-    font-family: serif;
+  font-family: serif;
 	font-size: 8rem;
 	font-weight: 300;
 	margin-bottom: 0;
@@ -34,4 +38,13 @@ main {
 	margin-right: 30px;
 }
 
+.contact-links {
+	color: $yellow;
+	font-size: 4rem;
+	padding: 0.5rem;
+	font-size: 3.5rem;
+}
 
+.contact-links:hover {
+	color: $text-grey;
+}

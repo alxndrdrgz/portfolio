@@ -252,6 +252,10 @@ html {
   font-size: 62.5%;
 }
 
+a {
+  text-decoration: none;
+}
+
 p {
   margin: 0;
   padding: 0;
@@ -280,6 +284,17 @@ main h1 {
   padding: 2%;
   text-align: right;
   margin-right: 30px;
+}
+
+.contact-links {
+  color: #EFB524;
+  font-size: 4rem;
+  padding: 0.5rem;
+  font-size: 3.5rem;
+}
+
+.contact-links:hover {
+  color: #d7cfcf;
 }
 
 header {
