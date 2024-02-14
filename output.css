@@ -46,7 +46,7 @@ html,
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Inter", sans-serif;
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -553,11 +553,34 @@ video {
   background-color: rgb(249 248 222 / var(--tw-bg-opacity));
 }
 
+.font-sans {
+  font-family: "Inter", sans-serif;
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
 
+.text-9xl {
+  font-size: 8rem;
+  line-height: 1;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .font-bold {
   font-weight: 700;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.text-sage {
+  --tw-text-opacity: 1;
+  color: rgb(86 83 68 / var(--tw-text-opacity));
 }

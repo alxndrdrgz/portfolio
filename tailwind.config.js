@@ -6,7 +6,11 @@ module.exports = {
       'beige': '#F9F8DE',
       'sage': '#565344',
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        'sans': ['"Inter", sans-serif',],
+      },
+    },
   },
   plugins: [],
 }
