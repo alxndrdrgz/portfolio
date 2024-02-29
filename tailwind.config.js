@@ -5,6 +5,7 @@ module.exports = {
     colors: {
       'beige': '#F9F8DE',
       'sage': '#565344',
+      'white': '#ffffff',
     },
     extend: {
       fontFamily: {
