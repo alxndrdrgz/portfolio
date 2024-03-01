@@ -747,16 +747,6 @@ video {
   color: rgb(86 83 68 / var(--tw-text-opacity));
 }
 
-.text-black {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
-.hover\:text-white:hover {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .hover\:text-black:hover {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -794,10 +784,6 @@ video {
 
   .md\:h-\[850px\] {
     height: 850px;
-  }
-
-  .md\:h-1\/4 {
-    height: 25%;
   }
 
   .md\:w-1\/2 {
