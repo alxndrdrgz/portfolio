@@ -235,22 +235,25 @@ li {
 
 img {
   max-width: 100%;
+  height: 100%;
   display: block;
+}
+
+main {
+  background-color: #000;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 html {
   font-size: 62.5%;
 }
 
-h1, h2, a {
-  font-family: "IBM Plex Serif", serif;
-  margin: 0;
-  padding: 0;
-}
-
-h2 {
-  font-weight: 300;
-  font-size: 4.5rem;
+a {
+  text-decoration: none;
 }
 
 p {
@@ -258,67 +261,44 @@ p {
   padding: 0;
 }
 
-body {
-  font-size: 1.7rem;
-  font-family: "Lato", sans-serif;
-  color: #FDFBF7;
-}
-
-.fab {
-  font-size: 4rem;
-}
-
-ul li a {
-  font-size: 2.5rem;
-}
-
-a:visited, a {
-  font-family: "IBM Plex Serif", serif;
-  color: #FDFBF7;
-  text-decoration: none;
-}
-
-a:hover,
-a:focus {
-  color: #FD7E14;
-  border-bottom: #FD7E14 2px solid;
-}
-
-header {
-  color: #FDFBF7;
+main {
+  color: #C4C4C4;
   text-align: right;
 }
 
-header h1 {
-  font-family: "IBM Plex Serif", serif;
-  font-size: 9rem;
+main .div-1 {
+  max-width: 65%;
+  margin-right: 30px;
+}
+
+main h1 {
+  font-family: serif;
+  font-size: 8rem;
   font-weight: 300;
-  font-style: Italic;
+  margin-bottom: 0;
 }
 
-.projects h2, .skills h2 {
+.footer-note {
+  color: #EFB524;
   font-size: 4rem;
-  margin: 8% 40px;
-}
-
-.skills h2 {
-  color: #FDFBF7;
+  padding: 2%;
   text-align: right;
-  padding-top: 8%;
-  margin-bottom: 5%;
+  margin-right: 30px;
 }
 
-.skills-text li {
-  font-size: 3rem;
-  font-family: "IBM Plex Serif", serif;
+.contact-links {
+  color: #EFB524;
+  font-size: 4rem;
+  padding: 0.5rem;
+  font-size: 3.5rem;
 }
 
-.cheeky-skills {
-  color: #FDFBF7;
+.contact-links:hover {
+  color: #d7cfcf;
 }
 
 header {
-  height: 95vh;
+  height: 85vh;
   background-color: #211E1E;
   display: flex;
   flex-direction: column;
@@ -327,39 +307,53 @@ header {
 }
 
 header .profile-image {
-  height: auto;
-  width: 500px;
+  height: 450px;
   position: absolute;
   bottom: 22%;
 }
 
 header .header-text {
-  padding: 5% 0;
+  padding: 2.5% 0 5%;
   background-color: #000000;
   border-top: #EFB524 3px solid;
 }
 
 header .header-text h2 {
-  margin-left: calc((100% / 2) - 60px);
+  margin-left: calc((100% / 2) - 80px);
 }
 
 header .header-text p {
-  margin-left: calc((100% / 2) - 60px);
+  margin-left: calc((100% / 2) - 80px);
   padding: 1.5% 0;
 }
 
-header .top-nav {
-  background-color: #EFB524;
-  padding: 25px 0;
+.fa-bars {
+  visibility: hidden;
 }
 
-header .top-nav ul {
+input[type="checkbox"] {
+  display: none;
+}
+
+.sticky-nav {
+  height: 5%;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.top-nav {
+  background-color: #EFB524;
+  padding: 2px 0;
+}
+
+.top-nav ul {
   width: 100%;
   display: flex;
   justify-content: flex-end;
 }
 
-header .top-nav ul li {
+.top-nav ul li {
   padding: 1.5rem;
 }
 
@@ -406,6 +400,34 @@ header .top-nav ul li {
 
 .project-flex .project-img {
   flex-basis: 50%;
+  position: relative;
+}
+
+.project-flex .project-img img {
+  width: 100%;
+  max-height: 100%;
+}
+
+.project-flex .project-img .project-link {
+  position: absolute;
+  background: rgba(17, 17, 17, 0.404);
+  transition: 0.4s ease-in;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.project-flex .project-img .project-link .link-box {
+  background-color: #000000;
+  color: #FDFBF7;
+  padding: 4%;
+  text-align: center;
+  margin-top: 25%;
+}
+
+.project-flex .project-img:hover .project-link {
+  opacity: 1;
 }
 
 .project-flex .project-text {
@@ -435,21 +457,36 @@ header .top-nav ul li {
 .skills-gallery .skills-row-1,
 .skills-gallery .skills-row-2,
 .skills-gallery .skills-row-3 {
-  flex-basis: 50%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-basis: 100%;
   margin: 4% 0;
+  text-align: center;
 }
 
 .skills-gallery .skills-row-4 {
-  flex-basis: 50%;
   display: flex;
-  justify-content: space-around;
-  margin: 4% 0;
+  flex-basis: 100%;
+  justify-content: space-evenly;
+  margin: 5% 0 4%;
 }
 
-.skills-gallery .skills-text {
-  margin: 4%;
+.skills-gallery ul {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.skills-gallery ul li {
+  width: calc(100% / 3);
+  text-align: center;
+}
+
+.skills-gallery .skills-text-4 {
+  justify-content: center;
 }
 
 .skills-gallery i {
@@ -460,17 +497,241 @@ header .top-nav ul li {
 .cheeky-skills {
   background-color: #000000;
   width: 88%;
-  padding: 2% 0;
-  text-align: center;
+}
+
+.contact {
+  background-color: #000000;
+}
+
+.contact-wrapper {
+  padding: 4% 0 2%;
+  margin-left: 8%;
+  width: 80%;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+form .name,
+form .email {
+  flex-basis: 50%;
+}
+
+form .name input,
+form .email input {
+  color: #FDFBF7;
+  padding: 2%;
+  width: 90%;
+  border: 3px solid #EFB524;
+  background-color: #000000;
+}
+
+form .name input[type="text"]::placeholder,
+form .name input[type="email"]::placeholder,
+form .email input[type="text"]::placeholder,
+form .email input[type="email"]::placeholder {
+  color: #FDFBF7;
+}
+
+form .message {
+  flex-basis: 100%;
+}
+
+form .message textarea {
+  color: #FDFBF7;
+  resize: none;
+  width: 95%;
+  height: 200px;
+  border: 3px solid #EFB524;
+  background-color: #000000;
+  margin: 0 auto;
+  padding: 2%;
+}
+
+form .message textarea::placeholder {
+  color: #FDFBF7;
+}
+
+form button {
+  background-color: #C4C4C4;
+  border: #C4C4C4 3px solid;
+  color: #000000;
+  margin: 2% 0;
+  padding: 3%;
+}
+
+form button:hover,
+form button:focus {
+  background-color: #000000;
+  border: #EFB524 3px solid;
+  color: #EFB524;
+}
+
+footer {
+  background-color: #000000;
+}
+
+@media (min-width: 1440px) {
+  .skills-row-1,
+  .skills-row-2,
+  .skills-row-3,
+  .skills-row-4 {
+    flex-basis: 50%;
+    margin: 4% 0;
+  }
+  .skills-text {
+    margin: 4%;
+  }
+  .skills-text:nth-child(4) {
+    margin-right: 0px;
+  }
+  i {
+    font-size: 10rem;
+    color: #000000;
+  }
+}
+
+@media (max-width: 1280px) {
+  header h1 {
+    font-size: 7.5rem;
+  }
+  header h2 {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 1040px) {
+  body {
+    font-size: 1.5rem;
+  }
+  .header-text-box {
+    width: 100%;
+    margin-left: 2%;
+  }
+  .header-text-box h1 {
+    font-size: 6.5rem;
+    margin-bottom: 2%;
+  }
+  .header-text-box h2 {
+    font-size: 2.5rem;
+  }
+  .projects h2,
+  .skills h2,
+  .contact h2 {
+    font-size: 4rem;
+  }
+  .skills i {
+    font-size: 8rem;
+  }
+  .project-flex {
+    flex-direction: column;
+  }
+  ul li a {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 837px) {
+  header .header-text {
+    text-align: right;
+  }
+  header .header-text h2,
+  header .header-text p {
+    margin-right: 1.5%;
+  }
+  header .profile-image {
+    height: 290px;
+    bottom: 50%;
+    left: 30%;
+  }
+  .top-nav {
+    text-align: right;
+  }
+  .top-nav ul.hamburger-nav {
+    display: none;
+    position: absolute;
+    top: 35px;
+    right: 4%;
+    background-color: #EFB524;
+    width: 35%;
+    transition: all 0.5s;
+  }
+  .top-nav ul.hamburger-nav li {
+    margin-right: 6%;
+  }
+  .fa-bars {
+    visibility: visible;
+    font-size: 4rem;
+  }
+  input[type="checkbox"]:checked + ul.hamburger-nav {
+    display: flex;
+    flex-direction: column;
+  }
+  .fa-bars:hover,
+  .fa-bars:focus {
+    color: #FDFBF7;
+  }
+  .skills-gallery i {
+    font-size: 5rem;
+  }
+  .skills-gallery .skills-text li {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 475px) {
+  .wrapper {
+    max-width: 475px;
+  }
+  header .profile-image {
+    height: 200px;
+    bottom: 65%;
+    left: 30%;
+  }
+  ul.hamburger-nav li i {
+    font-size: 2rem;
+  }
+  ul.hamburger-nav li a {
+    font-size: 1.7rem;
+  }
+  .projects .project-gallery .project-grey {
+    margin-left: 0;
+  }
+  .skills i {
+    font-size: 3rem;
+  }
+  .skills-wrapper {
+    background-color: #000000;
+    padding: 0;
+  }
+  .skills-gallery,
+  .cheeky-skills {
+    width: 100%;
+  }
+  .skills-gallery .skills-text li,
+  .cheeky-skills .skills-text li {
+    font-size: 1.5rem;
+  }
+  .cheeky-skills {
+    padding: 0 15px 0 0;
+    margin: 2% 4% 0 0;
+  }
+  form {
+    flex-direction: column;
+  }
+  form .name input,
+  form .email input {
+    width: 95%;
+  }
+  form button {
+    width: 95%;
+  }
 }
 
 .wrapper {
   max-width: 1280px;
   width: 90%;
   margin: 0 auto;
-}
-
-body {
-  background-color: #FDFBF7;
-  color: #000000;
 }

@@ -5,258 +5,110 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Google Fonts import stuff -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 	<title>Alex Rodriguez - Portfolio </title>
-	<link rel="stylesheet" href="dist/css/styles.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.11.0/devicon.min.css">
-	<!-- font awesome script -->
-	<script src="https://kit.fontawesome.com/edf24b0f28.js" crossorigin="anonymous"></script>
+	<link href="./output.css" rel="stylesheet">
 </head>
 
-<body>
-	<!-- Header Start -->
-	<header class="index-header">
-		<div class="header-text">
-			<div class="wrapper">
-				<div class="profile-image">
-					<img src="assets/alex-profile-pic.png" alt="an illustrated picture of the site creator">
+<body class="bg-beige font-sans text-sage">
+	<header class="h-screen flex md:justify-center">
+			<div class="flex flex-col-reverse md:flex-row items-center text-sage font-sans uppercase mx-auto">
+				<div class="px-4 py-2 md:px-0 w-full md:mx-10 md:w-1/4 flex flex-col flex-wrap">
+					<h1 class="text-lg w-2/3 md:text-3xl font-bold md:w-1/2">
+						Web Development
+						Illustration
+						<span class="text-4xl md:text-6xl">Portfolio</span>
+					</h1>
+					<p class="font-bold md:text-xl">(under construction)</p>
+					<a href="#about" class="pt-[25px] text-sage">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3.5" stroke="currentColor" class="w-10 h-10 text-sage hover:text-black">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
+						</svg>
+					</a>
 				</div>
-				<h1>Alex Rodriguez</h1>
-				<h2>// front end web developer & illustrator</h2>
-				<p>Hi, my name is Alex and I’m a front-end web developer, musician, and illustrator based in Toronto, Canada.
-					I’m a food
-					and hospitality management veteran who now uses front-end technologies to build fun, stylish, and accessible
-					web
-					applications. I’m passionate about good food, mutual-aid, inclusion, and making bad dad jokes.</p>
+				<div class="h-full bg-cover flex justify-start items-end md:h-[850px] w-full md:w-3/4 md:justify-center md:items-center"
+					style="background-image: url(./assets/DSC_0689.JPG)">
+					<h2 class="text-xl px-4 md:text-4xl md:pt-12 text-beige font-bold">
+						Alex Rodriguez-Santa Ana
+					</h2>
+				</div>
+			</div>
+			<nav>
+	
+			</nav>
+	</header>
+	<main>
+		<!-- About Section start -->
+		<section class="w-full h-[800px] py-10 mt-10" id="about">
+			<div class="container mx-auto px-4 py-2 md:px-0 md:w-1/2 md:mx-10 md:mt-12 flex flex-col justify-end md:justify-between h-full relative">
+				<div class="inline-block w-[85px] md:w-[130px] md:absolute md:top-4 md:left-6 md:transform md:-translate-y-1/2 md:-translate-x-1/2 md:rotate-90 border-b-4 md:border-b-8 border-sage">
+					<h2 class="text-2xl md:text-4xl font-bold text-sage pb-2">
+						About
+					</h2>
+				</div>
+				<div class="md:h-1/2">
+				</div>
+				<p class="text-sm md:text-lg font-sans font-bold mt-5 md:mt-20 md:py-8">
+					Alex Rodriguez-Santa Ana is a Toronto based web developer. He's a former food and hospitality management veteran who
+					now specializes in front-end frameworks+technologies to build fun, stylish, and accessible web applications. When not
+					he's not slumped infront of a computer keyboard, Alex is passionate about community-based mutual aid efforts, tabletop RPGs, making bad
+					dad jokes, and drinking too much coffee.
+				</p>
+			</div>
+		</section>
+
+		<!-- Project Section -->
+<section class="h-screen w-full py-10 mt-10 bg-sage" id="projects">
+	<div class="h-full container mx-auto px-4 py-2 relative md:mt-12">
+		<div
+			class="inline-block w-[100px] md:w-[150px] md:absolute md:top-4 md:right-0 md:transform md:-translate-y-1/2 md:-translate-x-1/2 md:rotate-90 border-b-4 md:border-b-8 border-beige">
+			<h2 class="text-2xl md:text-4xl font-bold text-beige pb-2">Projects</h2>
+		</div>
+		<div class="flex items-center justify-center mx-auto text-white text-4xl h-full">
+			<div class="md:grid md:grid-cols-3 md:grid-rows-2 p-8 w-full md:w-3/4 md:h-3/4">
+
+				<!-- Actual project items starts here -->
+				<!-- <div
+					class="flex items-end justify-end p-4 bg-[url('./assets/ocms-screenshot.png')] hover:opacity-75 hover:border-4 border-beige md:h-full h-[150px]">
+					1
+				</div>
+				<div
+					class="flex items-end justify-end p-4 bg-[url('./assets/gatsby-screenshot.png')] hover:opacity-75 hover:border-4 border-beige md:h-full h-[150px]">
+					2
+				</div>
+				<div
+					class="flex items-end justify-end p-4 bg-[url('./assets/noisemaker-screenshot.png')] hover:opacity-75 hover:border-4 border-beige md:h-full h-[150px]">
+					3
+				</div>
+				<div
+					class="flex items-end justify-end p-4 bg-[url('https://placebear.com/200/300')] bg-cover hover:opacity-75 hover:border-4 border-beige md:h-full h-[150px]">
+					4
+				</div>
+				<div
+					class="bg-blue-200 flex items-end justify-end p-4 bg-[url('https://placebear.com/200/300')] bg-cover hover:opacity-75 hover:border-4 border-beige md:h-full h-[150px]">
+					5
+				</div>
+				<div
+					class="bg-blue-200 flex items-end justify-end p-4 bg-[url('https://placebear.com/200/300')] bg-cover hover:opacity-75 hover:border-4 border-beige md:h-full h-[150px]">
+					6
+				</div> -->
 			</div>
 		</div>
-		<!-- Header nav bar starts here -->
-		<nav class="top-nav">
-			<div class="wrapper">
-				<ul>
-					<li>
-						<a href="https://www.instagram.com/alxndrdrgz/?hl=en">
-							<i class="fab fa-instagram"></i>
-						</a>
-					</li>
-					<li>
-						<a href="https://twitter.com/alxndrdrgz">
-							<i class="fab fa-twitter"></i>
-						</a>
-					</li>
-					<li>
-						<a href="https://www.linkedin.com/in/alex-rodriguez-sta-ana/">
-							<i class="fab fa-linkedin-in"></i>
-						</a>
-					</li>
-					<li>
-						<a href="#projects">
-							projects
-						</a>
-					</li>
-					<li>
-						<a href="#skills">
-							skills
-						</a>
-					</li>
-					<li>
-						<a href="illustration.html">
-							illustration
-						</a>
-					</li>
-					<li>
-						<a href="#contact">
-							contact
-						</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-	</header>
+	</div>
+</section>
 
-	<!-- Main start -->
-	<main>
-		<!-- Projects live here -->
-		<section class="projects" id="projects">
-
-			<div class="wrapper">
-				<h2>// projects:</h2>
-			</div>
-
-			<div class="project-gallery">
-
-				<!-- Project 1 -->
-				<div class="project-grey">
-					<div class="wrapper project-flex">
-						<div class="project-img">
-							<img src="assets/ocms-screenshot.png" alt="" />
-							<div class="project-link">
-								<p>
-									//<a href="https://confident-perlman-5594c2.netlify.app/">live site</a> &
-									<a href="https://github.com/UndercoverGAWS/outOfContextMovieSpoiler">github repo</a>
-								</p>
-							</div>
-						</div>
-						<div class="project-text">
-							<h3>Out of Context Movie Spoiler</h3>
-							<p>
-								A web application created as a collaborative group project at Juno College to show an understanding of
-								core React
-								concepts as applied to larger applications.
-							</p>
-						</div>
-					</div>
-				</div>
-
-				<!-- Project 2 -->
-				<div class="project-yellow">
-					<div class="wrapper">
-						<div class="inner-box project-flex">
-							<div class="project-text">
-								<h3>The Grape Gatsby</h3>
-								<p>A web application that accesses an external API developed in collaboration with Nicole Wu. The Grape
-									Gatsby is a party
-									planning app that matches the user's food input with an appropriate wine pairing.
-								</p>
-							</div>
-							<div class="project-img">
-								<img src="assets/gatsby-screenshot.png" alt="" />
-								<div class="project-link">
-									<p>
-										//<a href="https://alex-and-nicole.github.io/the-grape-gatsby/">live site</a> &
-										<a href="https://github.com/alex-and-nicole/the-grape-gatsby">github repo</a>
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<!-- Project 3 -->
-				<div class="project-grey">
-					<div class="wrapper project-flex">
-						<div class="project-img">
-							<img src="assets/noisemaker-screenshot.png" alt="">
-							<div class="project-link">
-								<p>
-									//<a href="https://trusting-leavitt-911246.netlify.app/">live site</a> &
-									<a href="https://github.com/alxndrdrgz/alex-rodriguez-project-3">github repo</a>
-								</p>
-							</div>
-						</div>
-						<div class="project-text">
-							<h3>
-								NoiseMaker3000
-							</h3>
-							<p>
-								An experimental React app made. Meant to emulate a DJ sound launchpad and MIDI controller. It’s a fun
-								little work in
-								progress. Go ahead, click on the live link and boop around on the buttons.
-							</p>
-						</div>
-					</div>
-				</div>
-
-			</div>
-
-		</section>
-
-		<!-- technical skills -->
-		<section class="skills" id="skills">
-			<div class="wrapper">
-				<h2>// technical skills:</h2>
-				
-			</div>
-			<div class="skills-wrapper">
-				<div class="wrapper">
-					<div class="skills-gallery">
-						<div class="skills-row-1">
-							<i class="devicon-html5-plain"></i>
-							<i class="devicon-css3-plain"></i>
-							<i class="devicon-javascript-plain"></i>
-						</div>
-						<ul class="skills-text">
-							<li>html</li>
-							<li>css</li>
-							<li>javascript</li>
-						</ul>
-
-						<div class="skills-row-2">
-							<i class="fab fa-react"></i>
-							<i class="fas fa-laptop-code"></i>
-							<i class="devicon-git-plain"></i>
-						</div>
-						<ul class="skills-text">
-							<li>react</li>
-							<li>responsive design</li>
-							<li>git</li>
-						</ul>
-						
-						<div class="skills-row-3">
-							<i class="devicon-firebase-plain"></i>
-							<i class="devicon-jquery-plain"></i>
-							<i class="devicon-sass-original"></i>
-						</div>
-						<ul class="skills-text">
-							<li>firebase</li>
-							<li>jquery</li>
-							<li>sass</li>
-						</ul>
-						<div class="skills-row-4">
-							<i class="devicon-photoshop-plain"></i>
-							<i class="devicon-figma-plain"></i>
-						</div>
-						<ul class="skills-text">
-							<li>adobe photoshop</li>
-							<li>figma</li>
-						</ul>
-					</div>
-					<div class="cheeky-skills">
-						<p>Those are just some of the work things I'm really good at. I'm also great at karaoke and making sure I'm drinking enough water.</p>
-					</div>
-				</div>	
-			</div>
-		
-		</section>
-
-		<!-- contact -->
-		<section class="contact" id="contact">
-			<div class="wrapper">
-				<h2>// contact:</h2>
-				<form action="">
-					<label for=""></label>
-					<input type="text">
-					<label for=""></label>
-					<input type="text">
-					<label for=""></label>
-					<input type="text">
-					<button></button>
-				</form>
-			</div>
-		</section>
-
-	</main>
-
-	<!-- Footer start -->
-	<footer>
-		<div class="wrapper">
-			<p>that’s all folks, don’t forget to tip your servers and delivery people.
-			</p>
-			<ul>
-				<li>
-					<a href="https://www.instagram.com/alxndrdrgz/?hl=en">
-						<i class="fab fa-instagram"></i>
-					</a>
-				</li>
-				<li>
-					<a href="https://twitter.com/alxndrdrgz">
-						<i class="fab fa-twitter"></i>
-					</a>
-				</li>
-				<li>
-					<a href="https://www.linkedin.com/in/alex-rodriguez-sta-ana/">
-						<i class="fab fa-linkedin-in"></i>
-					</a>
-				</li>
+		<!-- Contact Section -->
+		<section class=""></section>
+	</main>	
+	<!-- Footer -->
+	<footer class="w-full h-20 bg-black text-beige text-xs">
+		<div class="container mx-auto h-full">
+			<ul class="flex justify-end items-center font-bold h-full">
+				<li class="mx-2">Copyright 2024, Alex Rodriguez-Sta. Ana</li>
+				<li class="mx-2">wow</li>
 			</ul>
 		</div>
 	</footer>
