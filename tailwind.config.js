@@ -1,6 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html"],
+  content: ["./*.html"],
+  screens: {
+    'sm': '576px',
+    'md': '768px',
+    'lg': '992px',
+    'xl': '1200px',
+  },
   theme: {
     extend: {
       fontFamily: {
@@ -10,9 +16,13 @@ module.exports = {
         'beige': '#F9F8DE',
         'sage': '#565344',
         'white': '#ffffff',
+        'red': '#'
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/typography')
+  ],
 }
 
