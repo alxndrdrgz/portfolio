@@ -814,16 +814,8 @@ select {
   margin-top: 2.5rem;
 }
 
-.mt-12 {
-  margin-top: 3rem;
-}
-
 .mt-4 {
   margin-top: 1rem;
-}
-
-.mt-5 {
-  margin-top: 1.25rem;
 }
 
 .block {
@@ -962,9 +954,6 @@ select {
   cursor: pointer;
 }
 
-.grid-cols-1 {
-  grid-template-columns: repeat(1, minmax(0, 1fr));
-}
 
 .flex-col {
   flex-direction: column;
@@ -1043,9 +1032,6 @@ select {
   border-width: 1px;
 }
 
-.border-b-4 {
-  border-bottom-width: 4px;
-}
 
 .border-beige {
   --tw-border-opacity: 1;
@@ -1060,11 +1046,6 @@ select {
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-
-.bg-beige {
-  --tw-bg-opacity: 1;
-  background-color: rgb(249 248 222 / var(--tw-bg-opacity));
 }
 
 .bg-black {
@@ -1126,6 +1107,11 @@ select {
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .pb-2 {
@@ -1352,10 +1338,6 @@ select {
     right: 100px;
   }
 
-  .md\:top-4 {
-    top: 1rem;
-  }
-
   .md\:top-\[35px\] {
     top: 35px;
   }
@@ -1454,6 +1436,14 @@ select {
 
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:grid-rows-2 {
+    grid-template-rows: repeat(2, minmax(0, 1fr));
   }
 
   .md\:flex-row {
