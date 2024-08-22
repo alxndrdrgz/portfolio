@@ -1,169 +1,313 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Google Fonts import stuff -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-    rel="stylesheet">
-  <title>Alex Rodriguez-Santa Ana - Illustrations</title>
-  <link href="./output.css" rel="stylesheet">
-  <style>
-    /* Custom CSS to toggle visibility of dropdown */
-    #dropdown-toggle:checked~#dropdownNavbar {
-      display: block;
-      /* Show dropdown */
-    }
-  
-    #navbar-toggle:checked~#navbar-multi-level {
-      display: block;
-      /* Show the menu */
-    }
-  </style>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts import stuff -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Alex Rodriguez-Santa Ana - Illustrations</title>
+    <link href="./output.css" rel="stylesheet" />
+    <style>
+      /* Custom CSS to toggle visibility of dropdown */
+      #dropdown-toggle:checked ~ #dropdownNavbar {
+        display: block;
+        /* Show dropdown */
+      }
 
-<body class="bg-beige font-sans text-sage">
-  <nav class="bg-black fixed w-full z-20 top-0 start-0">
-    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-3">
-      <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
-        <img src="assets/alex-profile-pic.png" class="h-[60px]" alt="ARS Logo">
-        <span class="self-center text-xl font-semibold whitespace-nowrap text-beige"><span class="text-yellow">ARS</span>
-          Web
-          Development</span>
-      </a>
-      <!-- Hidden checkbox for toggle -->
-      <input type="checkbox" id="navbar-toggle" class="hidden">
-  
-      <!-- Toggle button (label for the checkbox) -->
-      <label for="navbar-toggle"
-        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-beige rounded-md md:hidden hover:bg-indigo hover:text-yellow focus:outline-none focus:ring-2 focus:ring-yellow cursor-pointer">
-        <span class="sr-only">Open main menu</span>
-        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M1 1h15M1 7h15M1 13h15" />
-        </svg>
-      </label>
-  
-      <div class="hidden md:flex flex-col md:flex-row w-full md:w-auto mt-4 md:mt-0 md:space-x-8 rtl:space-x-reverse"
-        id="navbar-multi-level">
-        <ul
-          class="flex flex-col md:flex-row p-4 md:p-0 font-medium border border-sage rounded-lg md:border-0 md:space-x-8 rtl:space-x-reverse">
-          <li>
-            <a href="index.html"
-              class="block py-2 px-3 rounded md:bg-transparent text-white hover:text-yellow md:p-0 hover:bg-indigo"
-              aria-current="page">Home</a>
-          </li>
-          <li>
-            <a href="indext.html#about"
-              class="block py-2 px-3 text-white rounded hover:bg-indigo md:hover:bg-transparent hover:text-yellow md:p-0">About</a>
-          </li>
-          <!-- Hidden checkbox for controlling the dropdown -->
-          <input type="checkbox" id="dropdown-toggle" class="hidden">
-  
-          <!-- Label for controlling the checkbox -->
-          <label for="dropdown-toggle"
-            class="flex items-center justify-between w-full py-2 px-3 text-white hover:bg-indigo md:hover:bg-transparent md:border-0 hover:text-yellow md:p-0 md:w-auto cursor-pointer">
-            Work
-            <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-              viewBox="0 0 10 6">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="m1 1 4 4 4-4" />
-            </svg>
-          </label>
-  
-          <!-- Dropdown menu -->
-          <div id="dropdownNavbar"
-            class="z-10 hidden absolute divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-sage dark:divide-gray-600 border border-white top-[220px] right-[35px] md:top-[35px] md:mt-10 md:right-[100px]">
-            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownNavbarLink">
-              <li>
-                <a href="index.html#projects" class="block px-4 py-2 hover:text-yellow">Web Development</a>
-              </li>
-              <li>
-                <a href="illustrations.html" class="block px-4 py-2 hover:text-yellow">Illustration</a>
-              </li>
-            </ul>
+      #navbar-toggle:checked ~ #navbar-multi-level {
+        display: block;
+        /* Show the menu */
+      }
+    </style>
+  </head>
+
+  <body class="bg-beige font-sans text-sage">
+    <nav class="bg-black fixed w-full z-20 top-0 start-0">
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-3"
+      >
+        <a
+          href="index.html"
+          class="flex items-center space-x-3 rtl:space-x-reverse"
+        >
+          <img
+            src="assets/alex-profile-pic.png"
+            class="h-[60px]"
+            alt="ARS Logo"
+          />
+          <span
+            class="self-center text-xl font-semibold whitespace-nowrap text-beige"
+            ><span class="text-yellow">ARS</span> Web Development</span
+          >
+        </a>
+        <!-- Hidden checkbox for toggle -->
+        <input type="checkbox" id="navbar-toggle" class="hidden" />
+
+        <!-- Toggle button (label for the checkbox) -->
+        <label
+          for="navbar-toggle"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-beige rounded-md md:hidden hover:bg-indigo hover:text-yellow focus:outline-none focus:ring-2 focus:ring-yellow cursor-pointer"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </label>
+
+        <div
+          class="hidden md:flex flex-col md:flex-row w-full md:w-auto mt-4 md:mt-0 md:space-x-8 rtl:space-x-reverse"
+          id="navbar-multi-level"
+        >
+          <ul
+            class="flex flex-col md:flex-row p-4 md:p-0 font-medium border border-sage rounded-lg md:border-0 md:space-x-8 rtl:space-x-reverse"
+          >
+            <li>
+              <a
+                href="index.html"
+                class="block py-2 px-3 rounded md:bg-transparent text-white hover:text-yellow md:p-0 hover:bg-indigo"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="indext.html#about"
+                class="block py-2 px-3 text-white rounded hover:bg-indigo md:hover:bg-transparent hover:text-yellow md:p-0"
+                >About</a
+              >
+            </li>
+            <!-- Hidden checkbox for controlling the dropdown -->
+            <input type="checkbox" id="dropdown-toggle" class="hidden" />
+
+            <!-- Label for controlling the checkbox -->
+            <label
+              for="dropdown-toggle"
+              class="flex items-center justify-between w-full py-2 px-3 text-white hover:bg-indigo md:hover:bg-transparent md:border-0 hover:text-yellow md:p-0 md:w-auto cursor-pointer"
+            >
+              Work
+              <svg
+                class="w-2.5 h-2.5 ms-2.5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 10 6"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m1 1 4 4 4-4"
+                />
+              </svg>
+            </label>
+
+            <!-- Dropdown menu -->
+            <div
+              id="dropdownNavbar"
+              class="z-10 hidden absolute divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-sage dark:divide-gray-600 border border-white top-[220px] right-[35px] md:top-[35px] md:mt-10 md:right-[100px]"
+            >
+              <ul
+                class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                aria-labelledby="dropdownNavbarLink"
+              >
+                <li>
+                  <a
+                    href="index.html#projects"
+                    class="block px-4 py-2 hover:text-yellow"
+                    >Web Development</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="illustrations.html"
+                    class="block px-4 py-2 hover:text-yellow"
+                    >Illustration</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <li>
+              <a
+                href="index.html#contact"
+                class="block py-2 px-3 text-white rounded hover:bg-indigo md:hover:bg-transparent hover:text-yellow md:p-0"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header class="mt-20 px-4 py-8 container w-full flex">
+      <h1
+        class="text-4xl md:text-6xl w-[200px] md:w-[320px] h-full font-bold text-sage border-b-8 border-sage mx-auto md:mx-0"
+      >
+        Illustration:
+      </h1>
+      <h2 class="text-2xl md:text-4xl font-bold h-full mt-4 ml-8 italic">
+        <span class="hover:text-yellow">
+          <a href="#analog">
+            Analog
+          </a>
+        </span>
+        /
+        <span class="hover:text-yellow">
+          <a href="#digital">
+           Digital
+          </a>
+        </span>
+      </h2>
+    </header>
+
+    <section class="container mx-auto flex flex-col px-4 h-full" id="analog">
+      <h2 class="text-2xl font-bold text-sage my-4 text-center mt-[150px]">Analog</h2>
+      <div class="relative md:w-full max-w-xl mx-auto overflow-hidden">
+        <!-- Carousel Container -->
+        <div
+          id="carousel"
+          class="flex transition-transform duration-500 ease-in-out h-full"
+        >
+          <!-- Carousel Items -->
+          <div class="min-w-full flex flex-col items-center">
+            <img
+              src="assets/art/analog/bootPrint.jpeg"
+              alt="Image 1"
+              class="w-full max-w-[350px] md:max-w-[500px] h-auto max-h-[500px] md:max-h-[700px] object-contain"
+            />
+            <p class="font-bold">Boot</p>
+            <p class="text-sm italic">Linocut block print, 2022</p>
           </div>
-          <li>
-            <a href="index.html#contact"
-              class="block py-2 px-3 text-white rounded hover:bg-indigo md:hover:bg-transparent hover:text-yellow md:p-0">Contact</a>
-          </li>
+          <div class="min-w-full flex flex-col items-center">
+            <img
+              src="assets/art/analog/major-door-157.jpeg"
+              alt="Image 2"
+              class="w-full max-w-[350px] md:max-w-[500px] h-auto max-h-[500px] md:max-h-[700px] object-contain"
+            />
+            <p class="font-bold">Home</p>
+            <p class="text-sm italic">Gouache, 2023</p>
+          </div>
+          <div class="min-w-full flex flex-col items-center">
+            <img
+              src="assets/art/analog/sugar-2023.jpeg"
+              alt="Image 3"
+              class="w-full max-w-[350px] md:max-w-[500px] h-auto max-h-[500px] md:max-h-[700px] object-contain"
+            />
+            <p class="font-bold">Sugar Island</p>
+            <p class="text-sm italic">Ink and paper, 2023</p>
+          </div>
+          <div class="min-w-full flex flex-col items-center">
+            <img
+              src="assets/art/analog/sugarPainting.jpeg"
+              alt="Image 3"
+              class="w-full max-w-[350px] md:max-w-[500px] h-auto max-h-[500px] md:max-h-[700px] object-contain"
+            />
+            <p class="font-bold">Sugar Island pt. 2</p>
+            <p class="text-sm italic">Gouache, 2023</p>
+          </div>
+        </div>
+        <!-- Navigation Buttons -->
+        <button
+          id="prev"
+          class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-sage text-white p-2 hover:bg-indigo hover:text-yellow focus:outline-none"
+        >
+          &#10094;
+        </button>
+        <button
+          id="next"
+          class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-sage text-white p-2 hover:bg-indigo hover:text-yellow focus:outline-none"
+        >
+          &#10095;
+        </button>
+      </div>
+    </section>
+
+    <section id="digital" class="container mx-auto flex flex-col px-4 mb-[100px] h-full">
+      <h2 class="text-2xl font-bold text-sage my-4 text-center mt-[100px]">Digital</h2>
+      <div class="relative md:w-full max-w-xl mx-auto overflow-hidden">
+        <!-- Carousel Container -->
+        <div
+          id="carousel2"
+          class="flex transition-transform duration-500 ease-in-out h-full"
+        >
+          <!-- Carousel Items -->
+          <div class="min-w-full flex flex-col items-center">
+            <img
+              src="assets/art/digital/lucy.jpg"
+              alt="Image 1"
+              class="w-full max-w-[350px] md:max-w-[500px] h-auto max-h-[500px] md:max-h-[700px] object-contain"
+            />
+            <p class="font-bold">Lucy</p>
+            <p class="text-sm italic">Procreate, 2024</p>
+          </div>
+          <div class="min-w-full flex flex-col items-center">
+            <img
+              src="assets/art/digital/powerArmor.jpg"
+              alt="Image 2"
+              class="w-full max-w-[350px] md:max-w-[500px] h-auto max-h-[500px] md:max-h-[700px] object-contain"
+            />
+            <p class="font-bold">Power Armor</p>
+            <p class="text-sm italic">Procreate, 2024</p>
+          </div>
+          <div class="min-w-full flex flex-col items-center">
+            <img
+              src="assets/art/digital/superMutant.JPG"
+              alt="Image 3"
+              class="w-full max-w-[350px] md:max-w-[500px] h-auto max-h-[500px] md:max-h-[700px] object-contain"
+            />
+            <p class="font-bold">Super Mutant</p>
+            <p class="text-sm italic">Ink and paper, 2024</p>
+          </div>
+          <div class="min-w-full flex flex-col items-center">
+            <img
+              src="assets/art/digital/palestinianGrad.JPG"
+              alt="Image 3"
+              class="w-full max-w-[350px] md:max-w-[500px] h-auto max-h-[500px] md:max-h-[700px] object-contain"
+            />
+            <p class="font-bold">From the River to the Sea</p>
+            <p class="text-sm italic">Gouache, 2023</p>
+          </div>
+        </div>
+        <!-- Navigation Buttons -->
+        <button
+          id="prev2"
+          class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-sage text-white p-2 hover:bg-indigo hover:text-yellow focus:outline-none"
+        >
+          &#10094;
+        </button>
+        <button
+          id="next2"
+          class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-sage text-white p-2 hover:bg-indigo hover:text-yellow focus:outline-none"
+        >
+          &#10095;
+        </button>
+      </div>
+    </section>
+
+    <footer class="w-full h-20 bg-black text-beige text-xs">
+      <div class="container mx-auto h-full">
+        <ul class="flex justify-end items-center font-bold h-full">
+          <li class="mx-2">Copyright 2024, Alex Rodriguez-Sta. Ana</li>
+          <li class="mx-2">wow</li>
         </ul>
       </div>
-    </div>
-  </nav>
-  <header class="">
-    <h1 class="text-4xl md:text-6xl w-full font-bold text-sage px-4 py-8">
-      Illustration
-    </h1>
-  </header>
-
-  <section class="container w-full px-4 flex justify-between">
-    <div class="w-1/4">
-      <h2 class="text-2xl font-bold text-sage pb-2">Analog Mediums</h2>
-    </div>  
-    <div class="grid grid-cols-1 md:grid-cols-2 mx-auto w-3/4">
-      <div class="">
-        <div class="">
-          <img src="assets/art/analog/bootPrint.jpeg" alt="" class="">
-        </div>
-        <div>
-          <p class="font-bold">Boot</p>
-          <p class="text-sm italic">Linocut block print, 2022</p>
-        </div>
-      </div>
-      <div>
-        <div>
-          <img src="assets/art/analog/major-door-157.jpeg" alt="">
-        </div>
-        <div>
-          <p class="font-bold">Home</p>
-          <p class="text-sm italic">Gouache, 2023</p>
-        </div>
-      </div>
-  
-      <div>
-        <div>
-          <img src="assets/art/analog/sugar-2023.jpeg" alt="">
-        </div>
-        <div>
-          <p class="font-bold">Sugar Island</p>
-          <p class="text-sm italic">Ink and paper, 2023</p>
-        </div>
-      </div>
-      <div>
-        <div>
-          <img src="assets/art/analog/sugarPainting.jpeg" alt="">
-        </div>
-        <div>
-          <p class="font-bold">Sugar Island pt. 2</p>
-          <p class="text-sm italic">Gouache, 2023</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="container w-full px-4 py-4 flex justify-between mt-12">
-    <div class="w-1/4">
-      <h2 class="text-2xl font-bold text-sage">Digital</h2>
-    </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 mx-auto w-3/4">
-      <img src="assets/art/digital/fashion.jpg" alt="">
-      <img src="assets/art/digital/lucy.jpg" alt="">
-      <img src="assets/art/digital/powerArmor.jpg" alt="">
-      <img src="assets/art/digital/superMutant.JPG" alt="">
-      <img src="assets/art/digital/palestinianGrad.JPG" alt="">
-    </div>
-  </section>
-  <footer class="w-full h-20 bg-black text-beige text-xs">
-    <div class="container mx-auto h-full">
-      <ul class="flex justify-end items-center font-bold h-full">
-        <li class="mx-2">Copyright 2024, Alex Rodriguez-Sta. Ana</li>
-        <li class="mx-2">wow</li>
-      </ul>
-    </div>
-  </footer>
-</body>
+    </footer>
+    <script src="scripts/carousel.js"></script>
+  </body>
 </html>
